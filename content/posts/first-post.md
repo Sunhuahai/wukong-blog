@@ -5,8 +5,6 @@ draft: false
 tags: ["随笔", "设计", "测试"]
 categories: ["思考"]
 author: "悟空"
-showToc: true
-TocOpen: true
 +++
 
 > “大繁若简，简而不凡。”
