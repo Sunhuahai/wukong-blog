@@ -1,10 +1,4 @@
 +++
-date = '2025-11-20T22:15:11+08:00'
-draft = false
-title = 'First Post'
-+++
-
----
 title: "Hello World：行者无疆"
 date: 2025-11-20T23:00:00+08:00
 draft: false
@@ -13,7 +7,7 @@ categories: ["思考"]
 author: "悟空"
 showToc: true
 TocOpen: true
----
++++
 
 > “大繁若简，简而不凡。”
 
