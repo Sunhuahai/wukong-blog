@@ -1,4 +1,4 @@
-baseURL = 'https://你的域名.vercel.app' # 部署后修改
+baseURL = 'https://wukong-blog.vercel.app' # 部署后修改
 languageCode = 'zh-cn'
 title = '悟空的博客'
 theme = 'PaperMod'
