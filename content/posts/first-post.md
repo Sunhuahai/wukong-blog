@@ -1,11 +1,13 @@
-+++
+---
 title: "Hello World：行者无疆"
 date: 2025-11-20T23:00:00+08:00
 draft: false
 tags: ["随笔", "设计", "测试"]
 categories: ["思考"]
 author: "悟空"
-+++
+showToc: true
+TocOpen: true
+---
 
 > “大繁若简，简而不凡。”
 
