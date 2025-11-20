@@ -15,7 +15,7 @@ buildExpired = false
 [params]
   env = "production"
   title = "悟空的博客"
-  description = "行者无疆，大道至简。" # 你的副标题
+  description = "平生唯爱七尺剑，斩吾见我我非我" # 你的副标题
   keywords = ["Blog", "Tech", "Life"]
   author = "悟空"
   defaultTheme = "auto" # 自动跟随系统黑白模式
@@ -31,15 +31,15 @@ buildExpired = false
   # 首页配置
   [params.homeInfoParams]
     Title = "你好，我是悟空"
-    Content = "这里是我的数字花园。\n\n保持极简，专注思考。"
+    Content = "欢迎来到我的博客。"
 
   # 社交链接（显示在首页头像下）
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/你的用户名"
+    url = "https://github.com/Sunhuahai"
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:你的邮箱@example.com"
+    url = "mailto:sunhh19@icloud.com"
 
   # 顶部导航栏
   [menu]
