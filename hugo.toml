@@ -29,17 +29,17 @@ buildExpired = false
   UseHugoToc = true
   
   # 首页配置
-  #[params.homeInfoParams]
-  #  Title = "你好，我是悟空"
-  #  Content = "欢迎来到我的博客。"
+  [params.homeInfoParams]
+    Title = "你好，我是悟空"
+    Content = "平生唯爱七尺剑，斩吾见我我非我"
 
   # 社交链接（显示在首页头像下）
- # [[params.socialIcons]]
- #   name = "github"
- #   url = "https://github.com/Sunhuahai"
- # [[params.socialIcons]]
- #   name = "email"
- #   url = "mailto:sunhh19@icloud.com"
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Sunhuahai"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:sunhh19@icloud.com"
 
   # 顶部导航栏
   [menu]
@@ -48,8 +48,3 @@ buildExpired = false
     name = "归档"
     url = "/archives/"
     weight = 10
-  [[menu.main]]
-    identifier = "search"
-    name = "搜索"
-    url = "/search/"
-    weight = 20
