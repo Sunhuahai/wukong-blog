@@ -1,0 +1,75 @@
+/* ============================================
+   1. 全局宽度调整
+   ============================================ */
+:root {
+    --main-width: 1200px; /*在大屏上使用更宽的容器*/
+}
+
+/* ============================================
+   2. 首页文章列表网格化 (核心代码)
+   ============================================ */
+/* 仅在列表页（首页/归档页）生效，且屏幕宽度大于 768px 时启用 */
+@media screen and (min-width: 768px) {
+    /* 将主容器设为 Grid 布局 */
+    .list .main {
+        display: grid;
+        /* 创建自适应的两列，每列至少 400px */
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 30px; /* 卡片之间的间距 */
+    }
+
+    /* ⚠️ 关键修复：让个人简介、分页器、第一篇置顶文章 横跨两列 */
+    .list .main .first-entry, 
+    .list .main .home-info, 
+    .list .main .page-header, 
+    .list .main .pagination,
+    .list .main .archive-year {
+        grid-column: 1 / -1; /* 占满整行 */
+    }
+
+    /* ============================================
+       3. 卡片样式美化 (黑白极简风)
+       ============================================ */
+    .post-entry {
+        /* 给每个卡片加一个极细的黑边框 */
+        border: 1px solid var(--primary);
+        padding: 24px;
+        border-radius: 8px;
+        /* 这是一个微妙的过渡效果 */
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        margin-bottom: 0 !important; /* 清除默认下边距 */
+        
+        /* 强制卡片高度一致 */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* 鼠标悬停时的效果：轻微上浮 + 阴影 */
+    .post-entry:hover {
+        transform: translateY(-4px);
+        box-shadow: 4px 4px 0px var(--primary); /* 经典的黑白复古阴影 */
+    }
+    
+    /* 调整卡片内的标题大小 */
+    .entry-header h2 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+}
+
+/* ============================================
+   4. 文章详情页优化
+   ============================================ */
+/* 让正文保持适中宽度（为了阅读体验），但让目录(TOC)利用右侧空间 */
+@media screen and (min-width: 1300px) {
+    .post-content {
+        max-width: 800px; /* 正文限制宽度，防止太宽难读 */
+        margin: 0 auto;   /* 居中 */
+    }
+    
+    /* 侧边栏目录位置调整 */
+    .toc {
+        margin-left: 40px;
+    }
+}
