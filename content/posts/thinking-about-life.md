@@ -1,7 +1,7 @@
 ---
 title: "Thinking About Life"
 date: 2025-11-22T18:26:01+08:00
-draft: true
+draft: false
 author: "悟空"
 
 # 标签与分类
