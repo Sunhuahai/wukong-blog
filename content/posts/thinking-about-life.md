@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Thinking About Life"
+date: 2025-11-22T18:26:01+08:00
 draft: true
 author: "悟空"
 
@@ -22,3 +22,7 @@ cover:
     caption: ""
     relative: True # 如果使用 Page Bundle (文件夹形式)，设为 true
 ---
+
+人的一生在宇宙尺度上是极为渺小的，渺小到只能看到宇宙一瞬的历史，这给了人无尽的无意义感。
+
+所谓长生久视之所以会成为各个民族的终极梦想（所谓天堂，净土等无非是另一种方式的永恒存在罢了），都寄托了人们希望拜托肉体局限性的期盼。
