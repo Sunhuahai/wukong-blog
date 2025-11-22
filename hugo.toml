@@ -15,25 +15,24 @@ buildExpired = false
 [params]
   env = "production"
   title = "悟空的博客"
-  description = "平生唯爱七尺剑，斩吾见我我非我" # 你的副标题
-  keywords = ["Blog", "Tech", "Life"]
+  description = "行者无疆，大道至简"
   author = "悟空"
-  defaultTheme = "auto" # 自动跟随系统黑白模式
+  defaultTheme = "auto"
   disableThemeToggle = false
   ShowReadingTime = true
-  ShowShareButtons = false # 极简主义，关掉分享按钮
+  ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowWordCount = true
   UseHugoToc = true
   
-  # 首页配置
+  # 首页配置 (你的新文案)
   [params.homeInfoParams]
     Title = "你好，我是悟空"
     Content = "平生唯爱七尺剑，斩吾见我我非我"
 
-  # 社交链接（显示在首页头像下）
+  # 社交链接
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/Sunhuahai"
@@ -41,10 +40,23 @@ buildExpired = false
     name = "email"
     url = "mailto:sunhh19@icloud.com"
 
-  # 顶部导航栏
-  [menu]
+  # 博客图标 (Favicon 配置)
+  [params.assets]
+    favicon = "favicon.ico"
+    favicon16x16 = "favicon-16x16.png"
+    favicon32x32 = "favicon-32x32.png"
+    apple_touch_icon = "apple-touch-icon.png"
+    safari_pinned_tab = "favicon.ico"
+
+# 顶部导航栏 (建议放在文件最下方)
+[menu]
   [[menu.main]]
     identifier = "archives"
     name = "归档"
     url = "/archives/"
     weight = 10
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 20
